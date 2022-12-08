@@ -1,8 +1,10 @@
 .footer {
   background: #292d32;
   padding: 70px 0;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 40px;
 }
 
@@ -10,6 +12,17 @@
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.footerIcon,
+.logo,
+.link {
+  transition: all 0.2s linear;
+}
+
+.footerIcon:hover,
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .footerLinks {
@@ -20,4 +33,26 @@
 
 .link {
   color: rgba(255, 255, 255, 0.8);
+}
+
+.link:hover {
+  transform: scale(1.1);
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footerLinks {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .footerIcons {
+    gap: 30px;
+    transform: scale(0.9);
+  }
 }
