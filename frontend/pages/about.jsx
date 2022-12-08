@@ -11,7 +11,7 @@ export default function About() {
   return (
     <div>
       <Head>
-        <title>Workshop Apps | About </title>
+        <title>Workshop Apps | About</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className={style.main__container}>
@@ -27,7 +27,7 @@ export default function About() {
           <div className={style.card}>
             <Image
               src={heroImg}
-              alt="Picture of the author"
+              alt="Picture of the video"
               width="100%"
               height="100%"
             />

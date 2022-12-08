@@ -42,6 +42,9 @@ export const colors = {
     // text semi dark color
     300: "#006174",
     400: "#F5F5F5",
+    500: "#26C82D",
+    600: "#EF2323",
+    700: "#00000099",
     // subtle main color
   },
 };
