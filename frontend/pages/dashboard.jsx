@@ -1,17 +1,26 @@
 import Head from "next/head";
 import SalesCard from "../components/sales-card";
-import { Stack } from "@chakra-ui/react";
-import styles from "../styles/Home.module.css";
+import MarketingCard from "../components/marketing-card";
+import { Stack, HStack } from "@chakra-ui/react";
+import ProductCard from "../components/product-card";
+import CohortToggler from "../components/cohort-toggler";
+import DashboardHedaader from "../components/dashboard-header";
 
 export default function Dashboard() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Workshop Apps | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Stack px={20}>
-        <SalesCard />
+      <Stack p={20} spacing="60px">
+        <DashboardHedaader />
+        <CohortToggler />
+        <HStack>
+          <ProductCard />
+          <MarketingCard />
+          <SalesCard />
+        </HStack>
       </Stack>
     </div>
   );
